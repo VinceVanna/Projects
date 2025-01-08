@@ -1,6 +1,14 @@
 # Projects
 
+## Table of Contents
+
 ## SimBank-Project
+
+### Project Description
+### Installation
+ - Installing Vue/VueJS
+### Running Environment
+### Common Errors/Fixes
 
 ### Vue/VueJS
 1. node - v

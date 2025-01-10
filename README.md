@@ -13,10 +13,10 @@
    1. Set up VirtualBox
    2. Download OpenSUSE Leap 15.5
    3. Configure VM to your preferences
- - Softwares/Programs Needed
+ - Softwares/Programs/Packages Needed
    - VueJS, Vuetify, VueX, Axios, Router
    - NodeJS
-   - Perfered IDE
+   - Preferred IDE
    - SpringBoot
    - PostgreSQL
    - Postman
@@ -55,7 +55,7 @@
 
                spring.jpa.hibernate.ddl-auto=update
                spring.jpa.show-sql=true
-
+   - PostgreSQL Tables and ERD Diagram
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands
 

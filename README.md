@@ -6,7 +6,7 @@
 ## SimBank-Project
 
 ### Project Description
-#### Installation
+### Installation
  - VM Enviroment
    1. Set up VirtualBox
    2. Download OpenSUSE Leap 15.5
@@ -36,6 +36,13 @@
      - Update vue/cli files ```npm update -g @vue/cli```
  - SpringBoot/Java Backend
    - Spring Initializr (https://start.spring.io/)
+   - Dependencies & Version
+     - Version: Java 21, Maven, Spring Boot Version: 3.3.4 (Or most stable version)
+     - Dependencies
+       - Spring Data JPA
+       - Lombok
+       - Spring Boot DevTools
+       - PostgreSQL Driver
 
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands

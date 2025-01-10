@@ -61,7 +61,7 @@
       (
           customer_id integer,
           account_id serial NOT NULL,
-          account_type character varying(255) COLLATE pg_catalog."default",
+          account_type character varying(255),
           balance double precision,
           created_at timestamp without time zone DEFAULT now(),
           updated_at timestamp without time zone,
@@ -71,15 +71,15 @@
       CREATE TABLE IF NOT EXISTS public.customers
       (
           customer_id serial NOT NULL,
-          first_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          last_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          username character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          hash_password character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          street_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          city_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          state_name character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          phone_number character varying(255) COLLATE pg_catalog."default" NOT NULL,
-          email character varying(255) COLLATE pg_catalog."default" NOT NULL,
+          first_name character varying(255) NOT NULL,
+          last_name character varying(255) NOT NULL,
+          username character varying(255) NOT NULL,
+          hash_password character varying(255) NOT NULL,
+          street_name character varying(255) NOT NULL,
+          city_name character varying(255) NOT NULL,
+          state_name character varying(255) NOT NULL,
+          phone_number character varying(255) NOT NULL,
+          email character varying(255) COLLATE NOT NULL,
           created_at timestamp without time zone,
           updated_at timestamp without time zone,
           CONSTRAINT customers_pkey PRIMARY KEY (customer_id)
@@ -90,10 +90,11 @@
           transaction_id serial NOT NULL,
           account_id integer,
           amount_changed double precision,
-          transaction_type character varying(255) COLLATE pg_catalog."default",
+          transaction_type character varying(255),
           transaction_time timestamp without time zone DEFAULT now(),
           CONSTRAINT transaction_pkey PRIMARY KEY (transaction_id)
       );
+   ![image alt]()
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands
 

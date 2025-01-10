@@ -94,7 +94,7 @@
           transaction_time timestamp without time zone DEFAULT now(),
           CONSTRAINT transaction_pkey PRIMARY KEY (transaction_id)
       );
-   ![image alt]()
+   ![image alt](https://github.com/VinceVanna/Projects/blob/6c903fa595054bd6ea275895ab3c9117f77baf6d/SimBankDB_ERD.png)
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands
 

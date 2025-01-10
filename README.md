@@ -8,6 +8,7 @@
 ## SimBank-Project
 
 ### Project Description
+ -  SimBank is an application that will simulate how a bank would send and recevie data to the client user and to the employees. The application will showcase the customer's recent transactions, balance, and accounts. For the employee's, they will have access to edit, update information, and control the user's accounts with admin privileges.
 ### Installation
  - VM Enviroment
    1. Set up VirtualBox

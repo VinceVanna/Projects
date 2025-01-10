@@ -21,6 +21,12 @@
    - SpringBoot
    - PostgreSQL
    - Postman
+   - NGINX
+ - Installing NGINX (Web Server)
+   1. ```sudo zypper install nginx```
+   2. ```sudo systemctl start nginx``` or enable auto-start ```sudo systemctl enable```
+   3. ```sudo systemctl restart nginx``` restart nginx each time the configuration file is edited
+   4. Test if NGINX is running properly by visiting the URL the website is hosted on
  - Installing VueJS (Must have NodeJS Installed)
    - If Node is not installed
      - ```zypper install nodejs14``` (https://nodejs.org/en/download/package-manager/all)
@@ -56,6 +62,17 @@
 
                spring.jpa.hibernate.ddl-auto=update
                spring.jpa.show-sql=true
+   - Connecting VueJS Application and Springboot Application to NGINX
+     1. Find where the 'NGINX.conf' is located in the VM, usually located in the ```../etc/nginx``` folder
+     2. Use your prefered text editor to edit the ```nginx.conf``` file
+     3. Under the 'server' section, change the server_name to your IP address, EX. ```server_name (my_ip_address)```
+     4. Change/add a new section to include your backend IP address is hosted with NGINX
+     5. Save changes
+     6. ```sudo systemctl restart nginx```
+   - If Errors Occur
+     - Check if file edits were saved
+     - Update/Change permissions of firewall VM access
+     - Add 'allow origin' web configuration file to SpringBoot
    - PostgreSQL Tables and ERD Diagram
    - ```
      CREATE TABLE IF NOT EXISTS public.account

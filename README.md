@@ -6,7 +6,7 @@
 ## SimBank-Project
 
 ### Project Description
-### Installation
+#### Installation
  - Installing Vue/VueJS
 ### Running Environment
 ### Common Errors/Fixes

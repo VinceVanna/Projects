@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-## Projects (SimBank-Project)
+
 ## SimBank-Project
 
 ### Project Description

@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-//const BASE_URL = "http://192.168.1.25:8080/SimBank/";
-const BASE_URL = "http://192.168.1.53:8080/SimBank/";
+const BASE_URL = "http://192.168.1.53:8080/SimBank/"; //Update to current IP address of VM
 const CUSTOMER_URL = BASE_URL + "Customer/";
 const ACCOUNT_URL = BASE_URL + "Account/";
 //const TRANSACTION_URL = BASE_URL + "Transaction/";

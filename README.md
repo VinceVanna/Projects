@@ -4,7 +4,6 @@
    1. SimBank-Project
       - Project Description
       - Installation
-   2. POS System
 
 ## SimBank-Project
 
@@ -46,8 +45,17 @@
        - Lombok
        - Spring Boot DevTools
        - PostgreSQL Driver
+   - If errors occur
+     - Add ```
+     -         spring.datasource.url=jdbc:postgresql://localhost:5432/simbankdb
+               spring.datasource.username=postgres
+               spring.datasource.password=postgres
+
+               spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+               spring.jpa.hibernate.ddl-auto=update
+               spring.jpa.show-sql=true```
 
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands
 
-## POS System

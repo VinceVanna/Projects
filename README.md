@@ -1,7 +1,10 @@
 # Projects
 
 ## Table of Contents
-
+   1. SimBank-Project
+      - Project Description
+      - Installation
+   2. POS System
 
 ## SimBank-Project
 
@@ -46,3 +49,5 @@
 
  - Python EXE File (THIS FILE IS NOT NEEDED)
    - This python file will execute CMD/terminal commands
+
+## POS System

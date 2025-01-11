@@ -65,10 +65,19 @@
    - Connecting VueJS Application and Springboot Application to NGINX
      1. Find where the 'NGINX.conf' is located in the VM, usually located in the ```../etc/nginx``` folder
      2. Use your prefered text editor to edit the ```nginx.conf``` file
-     3. Under the 'server' section, change the server_name to your IP address, EX. ```server_name (my_ip_address)```
-     4. Change/add a new section to include your backend IP address is hosted with NGINX
-     5. Save changes
-     6. ```sudo systemctl restart nginx```
+     3. Under the 'server' section, change the server_name to your IP address, EX. ```server_name (my_ip_address)``` and then change listen to desired port number, EX. ```listen (port number);```
+     4. Within the 'server' section, in the 'location' block, change the root to the VueJS folder destination,
+        -       location / {
+                      root (VueJS file location);
+                      index index.html index.htm;
+                }
+     5. Add a new 'location' block for the APIs/SpringBoot backend
+        -      location /(Name of API Endpoint)/{
+                  proxy_pass (URL or IP Adress of API Endpoint)
+                  (Add addition headers if needed)
+               }  
+     6. Save changes
+     7. ```sudo systemctl restart nginx```
    - If Errors Occur
      - Check if file edits were saved
      - Update/Change permissions of firewall VM access

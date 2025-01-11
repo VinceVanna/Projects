@@ -73,7 +73,7 @@
                 }
      5. Add a new 'location' block for the APIs/SpringBoot backend
         -      location /(Name of API Endpoint)/{
-                  proxy_pass (URL or IP Adress of API Endpoint)
+                  proxy_pass (URL or IP Address of API Endpoint)
                   (Add addition headers if needed)
                }  
      6. Save changes

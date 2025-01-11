@@ -14,7 +14,6 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry){
                 registry.addMapping("/**")
                         .allowedOrigins("http://localhost:8081")
-                        .allowedOrigins("http://192.168.1.25:8081")
                         .allowedOrigins("http://192.168.1.53:8081") //Update to current IP address of VM
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")

@@ -70,6 +70,7 @@ export default {
                                     this.$store.dispatch('setCityName', value.data[i].cityName);
                                     this.$store.dispatch('setStateName', value.data[i].stateName);
                                     this.$store.dispatch('setPhoneNumber', value.data[i].phoneNumber);
+                                    i = value.data.length;
                                     this.authenticate();
                                 }else{
                                     this.authenticate();
@@ -86,16 +87,6 @@ export default {
         },
         authenticate(){
             if(this.$store.getters.getStatus === "Logged In"){
-                console.log(this.$store.getters.getStatus);
-                console.log(this.$store.getters.getUserId);
-                console.log(this.$store.getters.getUsername);
-                console.log(this.$store.getters.getEmail);
-                console.log(this.$store.getters.getFirstName);
-                console.log(this.$store.getters.getLastName);
-                console.log(this.$store.getters.getStreetName);
-                console.log(this.$store.getters.getCityName);
-                console.log(this.$store.getters.getStateName);
-                console.log(this.$store.getters.getPhoneNumber);
                 router.push('/about')
             }else{
                 this.response_data = this.$store.getters.getStatus;
